@@ -243,7 +243,7 @@ def factor_pool_test_simple(
     param,
 ):
     # 这个函数是一个壳子，用来启动 因子检验的 进程
-    pool = mp.Pool(processes=(mp.cpu_count() - 1))
+    pool = mp.Pool(processes=10)
     grp_args = [
         (
             factor_name,
